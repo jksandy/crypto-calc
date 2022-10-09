@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CryptoCalc.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <title>CryptoCalc</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        a:link {
+            text-decoration: none;
+        }
+        .navbar > a{
+            padding-left:160px;
+            padding-right:160px;
+        }
+    </style>
+</head>
+<body style="background-color: mintcream;">
+
+    <nav
+        class="navbar navbar-expand-lg navbar-light navbar-sticky-top"
+        style="background-color: tomato; height:70px; font-size: 25px; font-family: 'Space Mono', monospace;">
+        <ul class="navbar-nav" style="align-items: center">
+            <li class="nav-item active">
+                <b><a
+                    class="nav-link"
+                    href="/home"
+                    style="font-size: 25px"><i class='fab fa-btc'></i> CryptoCalc
+                </a></b>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link" href="/md5"><i class='fas fa-dice-five'></i> MD-5           </a>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link" href="/rc4"><i class='fas fa-dice-four'></i> RC-4           </a>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link" href="/blowfish"><i class='fas fa-fish'></i> Blowfish            </a>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link" href="/contact"><i class='far fa-address-book'></i> Contact         </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <asp:ContentPlaceHolder ID="homediv" runat="server"></asp:ContentPlaceHolder>
+    <br /><br />
+    <footer class="page-footer black navbar-sticky-bottom" style="font-size: 20px; font-family: 'Space Mono', monospace; background-color: tomato;">
+
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col mt-md-0 mt-3">
+                    <h1 class="text-uppercase font-weight-bold">CryptoCalc</h1>
+                    <p>A calculator to simulate the working of the RC-4, MD-5 and the Blowfish algorithm</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            © Nothing to hold Copyrights
+        </div>
+    </footer>
+</body>
+</html>
