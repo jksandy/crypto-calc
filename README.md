@@ -1,1 +1,3 @@
-"# crypto-calc" 
+CryptoCalc
+
+Screenshots will be added soon!
